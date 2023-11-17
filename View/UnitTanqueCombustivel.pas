@@ -12,7 +12,6 @@ type
     lblCodigo: TLabel;
     lblDescricao: TLabel;
     lblCapacidade: TLabel;
-    Combustivel: TLabel;
     lblSaldo: TLabel;
     edtCodigo: TEdit;
     edtDescricao: TEdit;
@@ -26,12 +25,11 @@ type
     dsTanqueCombustivel: TDataSource;
     cdsTanqueCombustivelnCdTanqueCombustivel: TIntegerField;
     cdsTanqueCombustivelcDescricao: TStringField;
-    dbCmbCombustivel: TDBComboBox;
-    cdsCombustivel: TClientDataSet;
-    dsCombustivel: TDataSource;
-    cdsCombustivelnCdCombustivel: TIntegerField;
-    cdsCombustivelcDescricao: TStringField;
     btnLimpar: TButton;
+    cdsTanqueCombustivelnCdCombustivel: TIntegerField;
+    cdsTanqueCombustivelnCapacidade: TFloatField;
+    cdsTanqueCombustivelnSaldo: TFloatField;
+    cdsTanqueCombustivelnCdEmpresa: TIntegerField;
     procedure Button1Click(Sender: TObject);
     procedure btnExcluirClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
@@ -121,8 +119,10 @@ begin
       cdsTanqueCombustivel.Append;
       cdsTanqueCombustivelnCdTanqueCombustivel.Value := Query.FieldByName('nCdTanqueCombustivel').Value;
       cdsTanqueCombustivelcDescricao.Value           := Query.FieldByName('cDescricao').Value;
+      cdsTanqueCombustivelnCapacidade.Value          := Query.FieldByName('nCapacidadeTanque').Value;
+      //cdsTanqueCombustivelnSaldo.Value               := Query.FieldByName('nSaldo').Value;
+      cdsTanqueCombustivelnCdEmpresa.Value           := Query.FieldByName('nCdEmpresa').Value;
       cdsTanqueCombustivel.Post;
-
       Query.Next;
     end;
 
@@ -142,15 +142,9 @@ begin
     Abort;
   end;
 
-  if dbCmbCombustivel.Text = '' then
-  begin
-    MessageDlg('Combustivel não informado',TMsgDlgType.mtWarning,[TMsgDlgBtn.mbOK],0);
-    Abort;
-  end;
-
   if edtCapacidade.Text = '' then
   begin
-    MessageDlg('Descrição do tanque de combustivel não informado',TMsgDlgType.mtWarning,[TMsgDlgBtn.mbOK],0);
+    MessageDlg('Capacidade do tanque de combustivel não informado',TMsgDlgType.mtWarning,[TMsgDlgBtn.mbOK],0);
     Abort;
   end;
 
@@ -162,36 +156,15 @@ procedure TfrmTanqueCombustivel.DBGrid1DblClick(Sender: TObject);
 begin
   edtCodigo.text := IntToStr(cdsTanqueCombustivelnCdTanqueCombustivel.value);
   edtDescricao.Text := cdsTanqueCombustivelcDescricao.Value;
+  edtCapacidade.Text := FloatToStr(cdsTanqueCombustivelnCapacidade.Value);
+  edtSaldo.Text      := FloatToStr(cdsTanqueCombustivelnSaldo.Value);
 
   EsconderListagem(true);
 end;
 
 procedure TfrmTanqueCombustivel.FormShow(Sender: TObject);
-var
-  ControllerCombustivel : TControllerCombustivel;
-  Query : TADOQuery;
 begin
-  ControllerCombustivel := TControllerCombustivel.Create;
-  try
-    ControllerCombustivel.ModeloCombustivel.Enumerador := Listar;
-    Query := ControllerCombustivel.ModeloCombustivel.Listar;
-    while not Query.Eof do
-    begin
-      cdsCombustivel.Append;
-      cdsCombustivelnCdCombustivel.Value := Query.FieldByName('nCdCombustivel').Value;
-      cdsCombustivelcDescricao.Value := Query.FieldByName('cDescricao').Value;
-      cdsCombustivel.Post;
-      Query.Next;
-    end;
-
-  finally
-    FreeAndNil(ControllerCombustivel);
-    FreeAndNil(Query);
-  end;
-
   frmTanqueCombustivel.Height := 240;
-
-
 end;
 
 procedure TfrmTanqueCombustivel.Gravar;
@@ -204,10 +177,12 @@ begin
     if edtCodigo.Text = '' then
       ControllerTanqueCombustivel.ModeloTanqueCombustivel.Enumerador := Inserir
     else
+    begin
       ControllerTanqueCombustivel.ModeloTanqueCombustivel.Enumerador := Atualizar;
+      ControllerTanqueCombustivel.ModeloTanqueCombustivel.nCdTanqueCombustivel := StrToInt(edtcodigo.Text);
+    end;
 
     ControllerTanqueCombustivel.ModeloTanqueCombustivel.cDescricao := edtDescricao.Text;
-    ControllerTanqueCombustivel.ModeloTanqueCombustivel.nCdCombustivel := cdsCombustivelnCdCombustivel.Value;
     ControllerTanqueCombustivel.ModeloTanqueCombustivel.nCapacidadeTanque := StrToFloat(edtCapacidade.Text);
     ControllerTanqueCombustivel.ModeloTanqueCombustivel.nCdEmpresa := frmPrincipal.nCdEmpresa;
 

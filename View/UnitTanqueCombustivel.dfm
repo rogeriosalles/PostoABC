@@ -30,21 +30,14 @@ object frmTanqueCombustivel: TfrmTanqueCombustivel
     Caption = 'Descri'#231#227'o'
   end
   object lblCapacidade: TLabel
-    Left = 143
+    Left = 16
     Top = 96
     Width = 56
     Height = 13
     Caption = 'Capacidade'
   end
-  object Combustivel: TLabel
-    Left = 16
-    Top = 97
-    Width = 58
-    Height = 13
-    Caption = 'Combustivel'
-  end
   object lblSaldo: TLabel
-    Left = 273
+    Left = 146
     Top = 94
     Width = 26
     Height = 13
@@ -66,14 +59,14 @@ object frmTanqueCombustivel: TfrmTanqueCombustivel
     TabOrder = 1
   end
   object edtCapacidade: TEdit
-    Left = 143
+    Left = 16
     Top = 113
     Width = 121
     Height = 21
     TabOrder = 2
   end
   object edtSaldo: TEdit
-    Left = 270
+    Left = 143
     Top = 113
     Width = 121
     Height = 21
@@ -120,15 +113,17 @@ object frmTanqueCombustivel: TfrmTanqueCombustivel
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
     OnDblClick = DBGrid1DblClick
-  end
-  object dbCmbCombustivel: TDBComboBox
-    Left = 16
-    Top = 113
-    Width = 121
-    Height = 21
-    DataField = 'cDescricao'
-    DataSource = dsCombustivel
-    TabOrder = 8
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'nCdTanqueCombustivel'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'cDescricao'
+        Visible = True
+      end>
   end
   object btnLimpar: TButton
     Left = 178
@@ -136,14 +131,17 @@ object frmTanqueCombustivel: TfrmTanqueCombustivel
     Width = 75
     Height = 25
     Caption = 'Limpar'
-    TabOrder = 9
+    TabOrder = 8
     OnClick = btnLimparClick
   end
   object cdsTanqueCombustivel: TClientDataSet
     PersistDataPacket.Data = {
-      560000009619E0BD0100000018000000020000000000030000005600146E4364
+      A30000009619E0BD010000001800000006000000000003000000A300146E4364
       54616E717565436F6D627573746976656C04000100000000000A634465736372
-      6963616F01004900000001000557494454480200020064000000}
+      6963616F01004900000001000557494454480200020064000E6E4364436F6D62
+      7573746976656C04000100000000000B6E436170616369646164650800040000
+      000000066E53616C646F08000400000000000A6E4364456D7072657361040001
+      00000000000000}
     Active = True
     Aggregates = <>
     FieldDefs = <
@@ -155,12 +153,28 @@ object frmTanqueCombustivel: TfrmTanqueCombustivel
         Name = 'cDescricao'
         DataType = ftString
         Size = 100
+      end
+      item
+        Name = 'nCdCombustivel'
+        DataType = ftInteger
+      end
+      item
+        Name = 'nCapacidade'
+        DataType = ftFloat
+      end
+      item
+        Name = 'nSaldo'
+        DataType = ftFloat
+      end
+      item
+        Name = 'nCdEmpresa'
+        DataType = ftInteger
       end>
     IndexDefs = <>
     Params = <>
     StoreDefs = True
-    Left = 280
-    Top = 240
+    Left = 64
+    Top = 208
     object cdsTanqueCombustivelnCdTanqueCombustivel: TIntegerField
       DisplayLabel = 'C'#243'digo'
       DisplayWidth = 10
@@ -172,45 +186,22 @@ object frmTanqueCombustivel: TfrmTanqueCombustivel
       FieldName = 'cDescricao'
       Size = 100
     end
+    object cdsTanqueCombustivelnCdCombustivel: TIntegerField
+      FieldName = 'nCdCombustivel'
+    end
+    object cdsTanqueCombustivelnCapacidade: TFloatField
+      FieldName = 'nCapacidade'
+    end
+    object cdsTanqueCombustivelnSaldo: TFloatField
+      FieldName = 'nSaldo'
+    end
+    object cdsTanqueCombustivelnCdEmpresa: TIntegerField
+      FieldName = 'nCdEmpresa'
+    end
   end
   object dsTanqueCombustivel: TDataSource
     DataSet = cdsTanqueCombustivel
-    Left = 328
-    Top = 240
-  end
-  object cdsCombustivel: TClientDataSet
-    PersistDataPacket.Data = {
-      500000009619E0BD01000000180000000200000000000300000050000E6E4364
-      436F6D627573746976656C04000100000000000A6344657363726963616F0100
-      4900000001000557494454480200020064000000}
-    Active = True
-    Aggregates = <>
-    FieldDefs = <
-      item
-        Name = 'nCdCombustivel'
-        DataType = ftInteger
-      end
-      item
-        Name = 'cDescricao'
-        DataType = ftString
-        Size = 100
-      end>
-    IndexDefs = <>
-    Params = <>
-    StoreDefs = True
-    Left = 120
-    Top = 264
-    object cdsCombustivelnCdCombustivel: TIntegerField
-      FieldName = 'nCdCombustivel'
-    end
-    object cdsCombustivelcDescricao: TStringField
-      FieldName = 'cDescricao'
-      Size = 100
-    end
-  end
-  object dsCombustivel: TDataSource
-    DataSet = cdsCombustivel
-    Left = 184
-    Top = 264
+    Left = 112
+    Top = 208
   end
 end

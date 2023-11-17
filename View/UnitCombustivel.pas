@@ -24,6 +24,9 @@ type
     cdsListarnCdCombustivel: TFloatField;
     cdsListarnValor: TFloatField;
     cdsListarcDescricao: TStringField;
+    mskPercImposto: TMaskEdit;
+    lblPercImposto: TLabel;
+    cdsListarPercImposto: TFloatField;
     procedure btnGravarClick(Sender: TObject);
     procedure btnExcluirClick(Sender: TObject);
     procedure btnBuscarClick(Sender: TObject);
@@ -77,7 +80,7 @@ begin
 
     ControllerCombustivel.ModeloCombustivel.cDescricao := edtDescricao.Text;
     ControllerCombustivel.ModeloCombustivel.nValor := StrToFloat(mskValor.Text);
-
+    ControllerCombustivel.ModeloCombustivel.PercImposto := StrToFloat(mskPercImposto.Text);
 
     if ControllerCombustivel.Persistir then
       ShowMessage('Registro inserido.')
@@ -112,6 +115,7 @@ begin
       cdsListarnCdCombustivel.Value := Query.FieldByName('nCdCombustivel').Value;
       cdsListarcDescricao.Value     := Query.FieldByName('cDescricao').Value;
       cdsListarnValor.Value         := Query.FieldByName('nValor').Value;
+      cdsListarPercImposto.Value    := Query.FieldByName('PercImposto').Value;
       cdsListar.Post;
 
       Query.Next;
@@ -169,16 +173,18 @@ end;
 
 procedure TfrmCombustive.LimparTela;
 begin
-  edtCodigo.Text := '';
-  edtDescricao.Text := '';
-  mskValor.Text := '';
+  edtCodigo.Text      := '';
+  edtDescricao.Text   := '';
+  mskValor.Text       := '';
+  mskPercImposto.Text := '';
 end;
 
 procedure TfrmCombustive.dbGridListaCombustiveisDblClick(Sender: TObject);
 begin
-  edtCodigo.text := FloatToStr(cdsListarnCdCombustivel.Value);
+  edtCodigo.text    := FloatToStr(cdsListarnCdCombustivel.Value);
   edtDescricao.Text := cdsListarcDescricao.Value;
   mskValor.Text     := FloatToStr(cdsListarnValor.Value);
+  mskPercImposto.Text := FloatToStr(cdsListarPercImposto.Value);
 
   EsconderListagem(True);
 end;

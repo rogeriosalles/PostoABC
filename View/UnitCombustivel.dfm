@@ -36,6 +36,13 @@ object frmCombustive: TfrmCombustive
     Height = 13
     Caption = 'C'#243'digo'
   end
+  object lblPercImposto: TLabel
+    Left = 142
+    Top = 104
+    Width = 67
+    Height = 13
+    Caption = 'Perc. Imposto'
+  end
   object edtDescricao: TEdit
     Left = 16
     Top = 77
@@ -78,7 +85,7 @@ object frmCombustive: TfrmCombustive
     TabOrder = 4
   end
   object dbGridListaCombustiveis: TDBGrid
-    Left = 16
+    Left = 8
     Top = 208
     Width = 433
     Height = 129
@@ -122,12 +129,20 @@ object frmCombustive: TfrmCombustive
     TabOrder = 6
     OnClick = btnBuscarClick
   end
+  object mskPercImposto: TMaskEdit
+    Left = 142
+    Top = 123
+    Width = 120
+    Height = 21
+    TabOrder = 7
+    Text = ''
+  end
   object cdsListar: TClientDataSet
     PersistDataPacket.Data = {
-      5F0000009619E0BD0100000018000000030000000000030000005F000E6E4364
+      730000009619E0BD01000000180000000400000000000300000073000E6E4364
       436F6D627573746976656C08000400000000000A6344657363726963616F0100
       490000000100055749445448020002001400066E56616C6F7208000400000000
-      000000}
+      000B50657263496D706F73746F08000400000000000000}
     Active = True
     Aggregates = <>
     FieldDefs = <
@@ -143,6 +158,10 @@ object frmCombustive: TfrmCombustive
       item
         Name = 'nValor'
         DataType = ftFloat
+      end
+      item
+        Name = 'PercImposto'
+        DataType = ftFloat
       end>
     IndexDefs = <>
     Params = <>
@@ -157,6 +176,9 @@ object frmCombustive: TfrmCombustive
     end
     object cdsListarnValor: TFloatField
       FieldName = 'nValor'
+    end
+    object cdsListarPercImposto: TFloatField
+      FieldName = 'PercImposto'
     end
   end
   object dsListar: TDataSource

@@ -21,6 +21,9 @@ type
     procedure FormShow(Sender: TObject);
     procedure Combustivel1Click(Sender: TObject);
     procedure anquedeCombustivel1Click(Sender: TObject);
+    procedure BombadeAbastecimento1Click(Sender: TObject);
+    procedure Abastecimento1Click(Sender: TObject);
+    procedure Abastecimentos1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -36,13 +39,35 @@ implementation
 {$R *.dfm}
 
 uses
-  uControllerEmpresa,UnitEmpresa,UnitCombustivel,UnitTanqueCombustivel;
+  uControllerEmpresa,UnitEmpresa,UnitCombustivel,UnitTanqueCombustivel,UnitBombaAbastecimento,UnitVenda,UnitRelatorio;
+
+procedure TfrmPrincipal.Abastecimento1Click(Sender: TObject);
+begin
+  Application.CreateForm(TfrmVenda,frmVenda);
+  frmVenda.ShowModal;
+  FreeAndNil(frmVenda);
+end;
+
+procedure TfrmPrincipal.Abastecimentos1Click(Sender: TObject);
+begin
+  Application.CreateForm(TfrmRelatorio,frmRelatorio);
+  frmRelatorio.ListarVendas;
+  frmRelatorio.RelVenda.Preview();
+  FreeAndNil(frmRelatorio);
+end;
 
 procedure TfrmPrincipal.anquedeCombustivel1Click(Sender: TObject);
 begin
   Application.CreateForm(TfrmTanqueCombustivel,frmTanqueCombustivel);
   frmTanqueCombustivel.ShowModal;
   FreeAndNil(frmTanqueCombustivel);
+end;
+
+procedure TfrmPrincipal.BombadeAbastecimento1Click(Sender: TObject);
+begin
+  Application.CreateForm(TfrmBombaAbastecimento,frmBombaAbastecimento);
+  frmBombaAbastecimento.ShowModal;
+  FreeAndNil(frmBombaAbastecimento);
 end;
 
 procedure TfrmPrincipal.Combustivel1Click(Sender: TObject);

@@ -33,15 +33,18 @@ object frmPrincipal: TfrmPrincipal
         end
         object BombadeAbastecimento1: TMenuItem
           Caption = 'Bomba de Abastecimento'
+          OnClick = BombadeAbastecimento1Click
         end
       end
       object Abastecimento1: TMenuItem
         Caption = 'Abastecimento'
+        OnClick = Abastecimento1Click
       end
       object Relatrios1: TMenuItem
         Caption = 'Relat'#243'rios'
         object Abastecimentos1: TMenuItem
           Caption = 'Abastecimentos'
+          OnClick = Abastecimentos1Click
         end
       end
     end
