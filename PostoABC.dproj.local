@@ -3,8 +3,8 @@
 	<Transactions>
     <Transaction>2023/11/13 12:20:20.000.680,=C:\Users\Rogerio Jr\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>2023/11/13 12:28:58.000.146,=C:\Users\Rogerio Jr\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2023/11/13 15:45:11.000.843,C:\Users\Rogerio Jr\Pictures\Posto ABC\UnitPrincipal.dfm=C:\Users\Rogerio Jr\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
     <Transaction>2023/11/13 15:45:11.000.843,C:\Users\Rogerio Jr\Pictures\Posto ABC\UnitPrincipal.pas=C:\Users\Rogerio Jr\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/11/13 15:45:11.000.843,C:\Users\Rogerio Jr\Pictures\Posto ABC\UnitPrincipal.dfm=C:\Users\Rogerio Jr\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
     <Transaction>2023/11/13 15:45:20.000.034,C:\Users\Rogerio Jr\Pictures\Posto ABC\PostoABC.dproj=C:\Users\Rogerio Jr\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
     <Transaction>2023/11/13 17:16:46.000.356,=C:\Users\Rogerio Jr\Pictures\Posto ABC\Unit1.pas</Transaction>
     <Transaction>2023/11/13 17:17:23.000.802,C:\Users\Rogerio Jr\Pictures\Posto ABC\Unit1.pas=C:\Users\Rogerio Jr\Pictures\Posto ABC\Cadastros\UnitTanqueCombustivel.pas</Transaction>
@@ -13,14 +13,14 @@
     <Transaction>2023/11/13 17:20:42.000.742,C:\Users\Rogerio Jr\Pictures\Posto ABC\Unit1.dfm=C:\Users\Rogerio Jr\Pictures\Posto ABC\Cadastros\UnitEmpresa.dfm</Transaction>
     <Transaction>2023/11/13 17:20:42.000.742,C:\Users\Rogerio Jr\Pictures\Posto ABC\Unit1.pas=C:\Users\Rogerio Jr\Pictures\Posto ABC\Cadastros\UnitEmpresa.pas</Transaction>
     <Transaction>2023/11/13 17:22:09.000.993,=C:\Users\Rogerio Jr\Pictures\Posto ABC\Unit1.pas</Transaction>
-    <Transaction>2023/11/13 17:22:33.000.177,C:\Users\Rogerio Jr\Pictures\Posto ABC\Unit1.pas=C:\Users\Rogerio Jr\Pictures\Posto ABC\Cadastros\UnitBombaAbastecimento.pas</Transaction>
     <Transaction>2023/11/13 17:22:33.000.177,C:\Users\Rogerio Jr\Pictures\Posto ABC\Unit1.dfm=C:\Users\Rogerio Jr\Pictures\Posto ABC\Cadastros\UnitBombaAbastecimento.dfm</Transaction>
+    <Transaction>2023/11/13 17:22:33.000.177,C:\Users\Rogerio Jr\Pictures\Posto ABC\Unit1.pas=C:\Users\Rogerio Jr\Pictures\Posto ABC\Cadastros\UnitBombaAbastecimento.pas</Transaction>
     <Transaction>2023/11/13 17:23:14.000.525,=C:\Users\Rogerio Jr\Pictures\Posto ABC\Unit2.pas</Transaction>
-    <Transaction>2023/11/13 17:24:01.000.662,C:\Users\Rogerio Jr\Pictures\Posto ABC\Unit2.dfm=C:\Users\Rogerio Jr\Pictures\Posto ABC\Cadastros\UnitCombustivel.dfm</Transaction>
     <Transaction>2023/11/13 17:24:01.000.662,C:\Users\Rogerio Jr\Pictures\Posto ABC\Unit2.pas=C:\Users\Rogerio Jr\Pictures\Posto ABC\Cadastros\UnitCombustivel.pas</Transaction>
+    <Transaction>2023/11/13 17:24:01.000.662,C:\Users\Rogerio Jr\Pictures\Posto ABC\Unit2.dfm=C:\Users\Rogerio Jr\Pictures\Posto ABC\Cadastros\UnitCombustivel.dfm</Transaction>
     <Transaction>2023/11/13 17:26:31.000.916,=C:\Users\Rogerio Jr\Pictures\Posto ABC\Unit2.pas</Transaction>
-    <Transaction>2023/11/13 17:27:23.000.982,C:\Users\Rogerio Jr\Pictures\Posto ABC\Unit2.pas=C:\Users\Rogerio Jr\Pictures\Posto ABC\Venda\UnitVenda.pas</Transaction>
     <Transaction>2023/11/13 17:27:23.000.982,C:\Users\Rogerio Jr\Pictures\Posto ABC\Unit2.dfm=C:\Users\Rogerio Jr\Pictures\Posto ABC\Venda\UnitVenda.dfm</Transaction>
+    <Transaction>2023/11/13 17:27:23.000.982,C:\Users\Rogerio Jr\Pictures\Posto ABC\Unit2.pas=C:\Users\Rogerio Jr\Pictures\Posto ABC\Venda\UnitVenda.pas</Transaction>
     <Transaction>2023/11/13 17:32:46.000.043,=C:\Users\Rogerio Jr\Pictures\Posto ABC\Unit1.pas</Transaction>
     <Transaction>2023/11/13 17:34:00.000.811,C:\Users\Rogerio Jr\Pictures\Posto ABC\Unit1.pas=C:\Users\Rogerio Jr\Pictures\Posto ABC\Model\Empresa.pas</Transaction>
     <Transaction>2023/11/13 18:11:23.000.137,C:\Users\Rogerio Jr\Pictures\Posto ABC\Model\Empresa.pas=C:\Users\Rogerio Jr\Pictures\Posto ABC\Model\uEmpresa.pas</Transaction>
@@ -34,17 +34,17 @@
     <Transaction>2023/11/13 20:16:54.000.294,C:\Users\Rogerio Jr\Pictures\Posto ABC\Unit1.pas=C:\Users\Rogerio Jr\Pictures\Posto ABC\Model\uTanqueCombustivel.pas</Transaction>
     <Transaction>2023/11/13 20:20:29.000.220,=C:\Users\Rogerio Jr\Pictures\Posto ABC\Unit1.pas</Transaction>
     <Transaction>2023/11/13 20:21:32.000.536,C:\Users\Rogerio Jr\Pictures\Posto ABC\Unit1.pas=C:\Users\Rogerio Jr\Pictures\Posto ABC\Model\uVenda.pas</Transaction>
-    <Transaction>2023/11/13 20:26:10.000.973,C:\Users\Rogerio Jr\Pictures\Posto ABC\Cadastros\UnitCombustivel.pas=</Transaction>
-    <Transaction>2023/11/13 20:26:10.000.968,C:\Users\Rogerio Jr\Pictures\Posto ABC\Cadastros\UnitEmpresa.pas=</Transaction>
+    <Transaction>2023/11/13 20:26:10.000.978,C:\Users\Rogerio Jr\Pictures\Posto ABC\Cadastros\UnitBombaAbastecimento.pas=</Transaction>
+    <Transaction>2023/11/13 20:26:10.000.923,C:\Users\Rogerio Jr\Pictures\Posto ABC\Venda\UnitVenda.pas=</Transaction>
     <Transaction>2023/11/13 20:26:10.000.933,C:\Users\Rogerio Jr\Pictures\Posto ABC\Cadastros\UnitTanqueCombustivel.pas=</Transaction>
     <Transaction>2023/11/13 20:26:10.000.963,C:\Users\Rogerio Jr\Pictures\Posto ABC\UnitPrincipal.pas=</Transaction>
-    <Transaction>2023/11/13 20:26:10.000.923,C:\Users\Rogerio Jr\Pictures\Posto ABC\Venda\UnitVenda.pas=</Transaction>
-    <Transaction>2023/11/13 20:26:10.000.978,C:\Users\Rogerio Jr\Pictures\Posto ABC\Cadastros\UnitBombaAbastecimento.pas=</Transaction>
+    <Transaction>2023/11/13 20:26:10.000.968,C:\Users\Rogerio Jr\Pictures\Posto ABC\Cadastros\UnitEmpresa.pas=</Transaction>
+    <Transaction>2023/11/13 20:26:10.000.973,C:\Users\Rogerio Jr\Pictures\Posto ABC\Cadastros\UnitCombustivel.pas=</Transaction>
+    <Transaction>2023/11/13 20:27:14.000.891,=C:\Users\Rogerio Jr\Pictures\Posto ABC\View\UnitPrincipal.pas</Transaction>
+    <Transaction>2023/11/13 20:27:14.000.951,=C:\Users\Rogerio Jr\Pictures\Posto ABC\View\UnitTanqueCombustivel.pas</Transaction>
+    <Transaction>2023/11/13 20:27:14.000.817,=C:\Users\Rogerio Jr\Pictures\Posto ABC\View\UnitEmpresa.pas</Transaction>
     <Transaction>2023/11/13 20:27:14.000.697,=C:\Users\Rogerio Jr\Pictures\Posto ABC\View\UnitBombaAbastecimento.pas</Transaction>
     <Transaction>2023/11/13 20:27:14.000.757,=C:\Users\Rogerio Jr\Pictures\Posto ABC\View\UnitCombustivel.pas</Transaction>
-    <Transaction>2023/11/13 20:27:14.000.891,=C:\Users\Rogerio Jr\Pictures\Posto ABC\View\UnitPrincipal.pas</Transaction>
-    <Transaction>2023/11/13 20:27:14.000.817,=C:\Users\Rogerio Jr\Pictures\Posto ABC\View\UnitEmpresa.pas</Transaction>
-    <Transaction>2023/11/13 20:27:14.000.951,=C:\Users\Rogerio Jr\Pictures\Posto ABC\View\UnitTanqueCombustivel.pas</Transaction>
     <Transaction>2023/11/13 20:27:15.000.013,=C:\Users\Rogerio Jr\Pictures\Posto ABC\View\UnitVenda.pas</Transaction>
     <Transaction>2023/11/13 20:28:43.000.142,C:\Users\Rogerio Jr\Pictures\Posto ABC\Model\Empresa.pas=</Transaction>
     <Transaction>2023/11/13 20:31:58.000.135,=C:\Users\Rogerio Jr\Pictures\Posto ABC\Unit1.pas</Transaction>
@@ -66,19 +66,47 @@
     <Transaction>2023/11/15 17:30:43.000.937,C:\Users\Rogerio Jr\Pictures\Posto ABC\Unit1.pas=C:\Users\Rogerio Jr\Pictures\Posto ABC\DAO\uDAOTanqueCombustivel.pas</Transaction>
     <Transaction>2023/11/15 17:43:24.000.035,=C:\Users\Rogerio Jr\Pictures\Posto ABC\Unit1.pas</Transaction>
     <Transaction>2023/11/15 17:43:41.000.274,C:\Users\Rogerio Jr\Pictures\Posto ABC\Unit1.pas=C:\Users\Rogerio Jr\Pictures\Posto ABC\Controller\uControllerTanqueCombustivel.pas</Transaction>
-  </Transactions>  <ProjectSortOrder AutoSort="0" SortType="0">
+    <Transaction>2023/11/16 00:39:14.000.864,=C:\Users\Rogerio Jr\Pictures\Posto ABC\Unit1.pas</Transaction>
+    <Transaction>2023/11/16 00:39:33.000.298,C:\Users\Rogerio Jr\Pictures\Posto ABC\Unit1.pas=C:\Users\Rogerio Jr\Pictures\Posto ABC\DAO\uDAOBombaCombustivel.pas</Transaction>
+    <Transaction>2023/11/16 00:57:21.000.815,=C:\Users\Rogerio Jr\Pictures\Posto ABC\Unit1.pas</Transaction>
+    <Transaction>2023/11/16 00:57:41.000.694,C:\Users\Rogerio Jr\Pictures\Posto ABC\Controller\uControllerBombaCombustivel.pas=C:\Users\Rogerio Jr\Pictures\Posto ABC\Unit1.pas</Transaction>
+    <Transaction>2023/11/16 01:14:14.000.785,C:\Users\Rogerio Jr\Pictures\Posto ABC\Controller\uControllerBombaCombustivel.pas=C:\Users\Rogerio Jr\Pictures\Posto ABC\Controller\uControllerBombaAbastecimento.pas</Transaction>
+    <Transaction>2023/11/16 01:15:15.000.686,C:\Users\Rogerio Jr\Pictures\Posto ABC\DAO\uDAOBombaCombustivel.pas=C:\Users\Rogerio Jr\Pictures\Posto ABC\DAO\uDAOBombaAbastecimento.pas</Transaction>
+    <Transaction>2023/11/16 01:17:36.000.120,C:\Users\Rogerio Jr\Pictures\Posto ABC\Controller\uControllerBombaAbastecimento.pas=</Transaction>
+    <Transaction>2023/11/16 01:18:14.000.834,=C:\Users\Rogerio Jr\Pictures\Posto ABC\Controller\uControllerBombaAbastecimento.pas</Transaction>
+    <Transaction>2023/11/16 01:21:12.000.633,C:\Users\Rogerio Jr\Pictures\Posto ABC\DAO\uDAOBombaAbastecimento.pas=</Transaction>
+    <Transaction>2023/11/16 01:22:56.000.853,C:\Users\Rogerio Jr\Pictures\Posto ABC\Model\uBombaCombustivel.pas=C:\Users\Rogerio Jr\Pictures\Posto ABC\Model\uBombaAbastecimento.pas</Transaction>
+    <Transaction>2023/11/16 01:24:40.000.066,=C:\Users\Rogerio Jr\Pictures\Posto ABC\DAO\uDAOBombaAbastecimento.pas</Transaction>
+    <Transaction>2023/11/16 23:47:25.000.988,=C:\Users\Rogerio Jr\Pictures\Posto ABC\Unit1.pas</Transaction>
+    <Transaction>2023/11/16 23:48:02.000.254,C:\Users\Rogerio Jr\Pictures\Posto ABC\Unit1.pas=C:\Users\Rogerio Jr\Pictures\Posto ABC\DAO\uDAOVenda.pas</Transaction>
+    <Transaction>2023/11/17 00:12:30.000.792,=C:\Users\Rogerio Jr\Pictures\Posto ABC\Unit1.pas</Transaction>
+    <Transaction>2023/11/17 00:13:06.000.399,C:\Users\Rogerio Jr\Pictures\Posto ABC\Controller\uControllerVenda.pas=C:\Users\Rogerio Jr\Pictures\Posto ABC\Unit1.pas</Transaction>
+    <Transaction>2023/11/17 02:19:31.000.642,=C:\Users\Rogerio Jr\Pictures\Posto ABC\Unit1.pas</Transaction>
+    <Transaction>2023/11/17 02:19:43.000.924,=C:\Users\Rogerio Jr\Pictures\Posto ABC\Unit1.pas</Transaction>
+    <Transaction>2023/11/17 02:20:02.000.909,C:\Users\Rogerio Jr\Pictures\Posto ABC\View\UnitRelatorioVendas.dfm=C:\Users\Rogerio Jr\Pictures\Posto ABC\Unit1.dfm</Transaction>
+    <Transaction>2023/11/17 02:20:02.000.909,C:\Users\Rogerio Jr\Pictures\Posto ABC\View\UnitRelatorioVendas.pas=C:\Users\Rogerio Jr\Pictures\Posto ABC\Unit1.pas</Transaction>
+    <Transaction>2023/11/17 02:26:24.000.559,=C:\Users\Rogerio Jr\Pictures\Posto ABC\Unit1.pas</Transaction>
+    <Transaction>2023/11/17 02:26:59.000.572,C:\Users\Rogerio Jr\Pictures\Posto ABC\View\UnitRelatorio.pas=C:\Users\Rogerio Jr\Pictures\Posto ABC\Unit1.pas</Transaction>
+    <Transaction>2023/11/17 02:26:59.000.572,C:\Users\Rogerio Jr\Pictures\Posto ABC\View\UnitRelatorio.dfm=C:\Users\Rogerio Jr\Pictures\Posto ABC\Unit1.dfm</Transaction>
+    <Transaction>2023/11/17 04:48:03.525,C:\Users\Rogerio Jr\Pictures\Posto ABC\View\UnitRelatorioVendas.pas=</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
     <File Path="Controller"/>
+    <File Path="Controller\uControllerBombaAbastecimento.pas"/>
     <File Path="Controller\uControllerCombustivel.pas"/>
     <File Path="Controller\uControllerConection.pas"/>
     <File Path="Controller\uControllerEmpresa.pas"/>
     <File Path="Controller\uControllerTanqueCombustivel.pas"/>
+    <File Path="Controller\uControllerVenda.pas"/>
     <File Path="DAO"/>
     <File Path="DAO\uDAOCombustivel.pas"/>
     <File Path="DAO\uDAOConection.pas"/>
     <File Path="DAO\uDAOEmpresa.pas"/>
     <File Path="DAO\uDAOTanqueCombustivel.pas"/>
+    <File Path="DAO\uDAOBombaAbastecimento.pas"/>
+    <File Path="DAO\uDAOVenda.pas"/>
     <File Path="Model"/>
-    <File Path="Model\uBombaCombustivel.pas"/>
+    <File Path="Model\uBombaAbastecimento.pas"/>
     <File Path="Model\uCombustivel.pas"/>
     <File Path="Model\uEmpresa.pas"/>
     <File Path="Model\uEnumCrud.pas"/>
@@ -97,5 +125,7 @@
     <File Path="View\UnitTanqueCombustivel.dfm"/>
     <File Path="View\UnitVenda.pas"/>
     <File Path="View\UnitVenda.dfm"/>
+    <File Path="View\UnitRelatorio.pas"/>
+    <File Path="View\UnitRelatorio.dfm"/>
   </ProjectSortOrder>
 </BorlandProject>

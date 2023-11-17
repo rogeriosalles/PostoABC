@@ -102,11 +102,11 @@
         </DelphiCompile>
         <DCCReference Include="Model\uEmpresa.pas"/>
         <DCCReference Include="Model\uCombustivel.pas"/>
-        <DCCReference Include="Model\uBombaCombustivel.pas"/>
+        <DCCReference Include="Model\uBombaAbastecimento.pas"/>
         <DCCReference Include="Model\uTanqueCombustivel.pas"/>
         <DCCReference Include="Model\uVenda.pas"/>
         <DCCReference Include="View\UnitBombaAbastecimento.pas">
-            <Form>Form1</Form>
+            <Form>frmBombaAbastecimento</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="View\UnitCombustivel.pas">
@@ -137,7 +137,17 @@
         <DCCReference Include="DAO\uDAOCombustivel.pas"/>
         <DCCReference Include="Controller\uControllerCombustivel.pas"/>
         <DCCReference Include="DAO\uDAOTanqueCombustivel.pas"/>
-        <DCCReference Include="Controller\uControllerTanqueCombustivel.pas"/>
+        <DCCReference Include="Controller\uControllerTanqueCombustivel.pas">
+            <Form>$R *.res</Form>
+        </DCCReference>
+        <DCCReference Include="Controller\uControllerBombaAbastecimento.pas"/>
+        <DCCReference Include="DAO\uDAOBombaAbastecimento.pas"/>
+        <DCCReference Include="DAO\uDAOVenda.pas"/>
+        <DCCReference Include="Controller\uControllerVenda.pas"/>
+        <DCCReference Include="View\UnitRelatorio.pas">
+            <Form>frmRelatorio</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
