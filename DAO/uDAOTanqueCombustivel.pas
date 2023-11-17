@@ -40,12 +40,11 @@ begin
 
     try
       Query := TControllerConection.getInstance().daoConection.CriarQuery;
-      Query.SQL.Add('UPDATE TanqueCombustivel SET cDescricao = :Descricao, nCapacidadeTanque = :nCapacidadeTanque, nCdCombustivel = :nCdCombustivel, nCdEmpresa = :nCdEmpresa)');
+      Query.SQL.Add('UPDATE TanqueCombustivel SET cDescricao = :cDescricao, nCapacidadeTanque = :nCapacidadeTanque,nCdEmpresa = :nCdEmpresa');
       Query.SQL.Add('WHERE nCdTanqueCombustivel = :nCdTanqueCombustivel');
       //Passa por parametro os valores por ser mais seguro
-      Query.Parameters.ParamByName('Descricao').Value         := ModeloTanqueCombustivel.cDescricao;
+      Query.Parameters.ParamByName('cDescricao').Value         := ModeloTanqueCombustivel.cDescricao;
       Query.Parameters.ParamByName('nCapacidadeTanque').Value := ModeloTanqueCombustivel.nCapacidadeTanque;
-      Query.Parameters.ParamByName('nCdCombustivel').Value    := ModeloTanqueCombustivel.nCdCombustivel;
       Query.Parameters.ParamByName('nCdEmpresa').Value        := ModeloTanqueCombustivel.nCdEmpresa;
       Query.Parameters.ParamByName('nCdTanqueCombustivel').Value := ModeloTanqueCombustivel.nCdTanqueCombustivel;
 
@@ -58,9 +57,6 @@ begin
   except
     Result := False;
   end;
-
-
-
 end;
 
 function TDAOTanqueCombustivel.Excluir(ModeloTanqueCombustivel: TTanqueCombustivel): Boolean;
@@ -68,10 +64,9 @@ var
   Query : TADOQuery;
 begin
   try
-
     try
       Query := TControllerConection.getInstance().daoConection.CriarQuery;
-      Query.SQL.Add('DELETE FROM TanqueCombustivel)');
+      Query.SQL.Add('DELETE FROM TanqueCombustivel');
       Query.SQL.Add('WHERE nCdTanqueCombustivel = :nCdTanqueCombustivel');
       //Passa por parametro os valores por ser mais seguro
       Query.Parameters.ParamByName('nCdTanqueCombustivel').Value   := ModeloTanqueCombustivel.nCdTanqueCombustivel;
@@ -96,11 +91,10 @@ begin
 
     try
       Query := TControllerConection.getInstance().daoConection.CriarQuery;
-      Query.SQL.Add('INSERT INTO TanqueCombustivel(cDescricao, nCapacidadeTanque, nCdCombustivel,nCdEmpresa) VALUES (:cDescricao, :nCapacidadeTanque, :nCdCombustivel,:nCdEmpresa)');
+      Query.SQL.Add('INSERT INTO TanqueCombustivel(cDescricao, nCapacidadeTanque, nCdEmpresa) VALUES (:cDescricao, :nCapacidadeTanque,:nCdEmpresa)');
       //Passa por parametro os valores por ser mais seguro
       Query.Parameters.ParamByName('cDescricao').Value         := ModeloTanqueCombustivel.cDescricao;
       Query.Parameters.ParamByName('nCapacidadeTanque').Value := ModeloTanqueCombustivel.nCapacidadeTanque;
-      Query.Parameters.ParamByName('nCdCombustivel').Value    := ModeloTanqueCombustivel.nCdCombustivel;
       Query.Parameters.ParamByName('nCdEmpresa').Value        := ModeloTanqueCombustivel.nCdEmpresa;
       //Executa a query
       Query.ExecSQL;

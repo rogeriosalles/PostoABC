@@ -27,12 +27,13 @@ begin
 
     try
       Query := TControllerConection.getInstance().daoConection.CriarQuery;
-      Query.SQL.Add('UPDATE Combustivel SET cDescricao = :Descricao, nValor = :Valor');
+      Query.SQL.Add('UPDATE Combustivel SET cDescricao = :Descricao, nValor = :Valor, PercImposto = :PercImposto');
       Query.SQL.Add('WHERE nCdCombustivel = :nCdCombustivel');
       //Passa por parametro os valores por ser mais seguro
-      Query.Parameters.ParamByName('Descricao').Value    := ModeloCombustivel.cDescricao;
-      Query.Parameters.ParamByName('valor').Value := ModeloCombustivel.nValor;
-      Query.Parameters.ParamByName('nCdCombustivel').Value   := ModeloCombustivel.nCdCombustivel;
+      Query.Parameters.ParamByName('Descricao').Value      := ModeloCombustivel.cDescricao;
+      Query.Parameters.ParamByName('valor').Value          := ModeloCombustivel.nValor;
+      Query.Parameters.ParamByName('nCdCombustivel').Value := ModeloCombustivel.nCdCombustivel;
+      Query.Parameters.ParamByName('PercImposto').Value    := ModeloCombustivel.PercImposto;
 
       //Executa a query
       Query.ExecSQL;
@@ -78,10 +79,11 @@ begin
 
     try
       Query := TControllerConection.getInstance().daoConection.CriarQuery;
-      Query.SQL.Add('INSERT INTO Combustivel (cDescricao,nValor) VALUES (:Descricao,:Valor)');
+      Query.SQL.Add('INSERT INTO Combustivel (cDescricao,nValor,PercImposto) VALUES (:Descricao,:Valor,:PercImposto)');
       //Passa por parametro os valores por ser mais seguro
-      Query.Parameters.ParamByName('Descricao').Value        := ModeloCombustivel.cDescricao;
-      Query.Parameters.ParamByName('valor').Value            := ModeloCombustivel.nValor;
+      Query.Parameters.ParamByName('Descricao').Value   := ModeloCombustivel.cDescricao;
+      Query.Parameters.ParamByName('valor').Value       := ModeloCombustivel.nValor;
+      Query.Parameters.ParamByName('PercImposto').Value := ModeloCombustivel.PercImposto;
 
       //Executa a query
       Query.ExecSQL;
