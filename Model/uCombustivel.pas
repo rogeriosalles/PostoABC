@@ -11,12 +11,14 @@ type
     FcDescricao: string;
     FnValor: double;
     FEnumerador: EnumTipoCrud;
+    FPercImposto: double;
 
     public
       property nCdCombustivel: integer read FnCdCombustivel write FnCdCombustivel;
       property cDescricao: string read FcDescricao write FcDescricao;
       property nValor: double read FnValor write FnValor;
       property Enumerador: EnumTipoCrud read FEnumerador write FEnumerador;
+      property PercImposto: double read FPercImposto write FPercImposto;
 
       function persistir : Boolean;
       function Listar : TADOQuery;

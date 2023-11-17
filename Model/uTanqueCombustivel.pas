@@ -20,7 +20,6 @@ type
       property cDescricao: string read FcDescricao write FcDescricao;
       property nCapacidadeTanque: double read FnCapacidadeTanque write FnCapacidadeTanque;
       property nSaldo: Double read FnSaldo write FnSaldo;
-      property nCdCombustivel: integer read FnCdCombustivel write FnCdCombustivel;
       property nCdEmpresa: integer read FnCdEmpresa write FnCdEmpresa;
       property Enumerador: EnumTipoCrud read FEnumerador write FEnumerador;
 
